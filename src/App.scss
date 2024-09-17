@@ -1,5 +1,5 @@
 .container {
-    max-width: 1200px;
+    max-width: 1600px;
     padding: 0 10px;
     margin: auto;
     height: 100%;
@@ -153,6 +153,10 @@
     gap: 15px;
     height: 100%;
     min-width: 300px;
+
+    &:first-child {
+        flex-grow: 1;
+    }
 }
 
 .switcher {
@@ -397,17 +401,25 @@
 }
 
 .report_cart-block {
+    flex-grow: 1;
     border-radius: 20px;
     background: #eceef1;
     padding: 8px;
     padding-left: 25px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 10px;
     white-space: nowrap;
 }
 
-.report_cart-row {
+.report_cart-block-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.report_cart-row {  
     display: flex;
     align-items: center;
     gap: 6px;
@@ -471,6 +483,7 @@
 }
 
 .report_cart-pay {
+    justify-self: end;
     border-radius: 13px;
     padding: 6px 13px;
     width: 160px;
@@ -563,16 +576,14 @@
     }
 }
 
-.finances__nav {
-    button {
-        border-radius: 18px;
-        padding: 15px 35px;
-        background: #dce0e5;
-        font-weight: 400;
-        font-size: 16px;
-        color: #121212;
-        width: 100%;
-    }
+.finances__btn {
+    border-radius: 18px;
+    padding: 15px 35px;
+    background: #dce0e5;
+    font-weight: 400;
+    font-size: 16px;
+    color: #121212;
+    width: 100%;
 }
 
 .buttons_generates {

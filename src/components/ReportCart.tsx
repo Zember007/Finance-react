@@ -13,22 +13,24 @@ interface props {
     }
 }
 
-const ReportCart = (props:props) => {
+const ReportCart = (props: props) => {
     return (
         <div className='report_cart'>
             <div className="report_cart-block">
-                <div className="report_cart-row">
-                    <span className="report_cart-number">№ {props.number}</span>
-                    <span className={'report_cart-status '+props.status}>{props.status === 'no-payed'? 'Просрочен' :props.status === 'payed'? 'Оплачен' : 'Ожидает оплаты '}</span>
-                </div>
-                <div className="report_cart-inf">
-                    <div className="report_cart-inf-item">
-                        <span>Дата</span>
-                        <strong>{props.date.created}</strong>
+                <div className="report_cart-block-item">
+                    <div className="report_cart-row">
+                        <span className="report_cart-number">№ {props.number}</span>
+                        <span className={'report_cart-status ' + props.status}>{props.status === 'no-payed' ? 'Просрочен' : props.status === 'payed' ? 'Оплачен' : 'Ожидает оплаты '}</span>
                     </div>
-                    <div className="report_cart-inf-item">
-                        <span>Оплатить до</span>
-                        <strong>{props.date.before}</strong>
+                    <div className="report_cart-inf">
+                        <div className="report_cart-inf-item">
+                            <span>Дата</span>
+                            <strong>{props.date.created}</strong>
+                        </div>
+                        <div className="report_cart-inf-item">
+                            <span>Оплатить до</span>
+                            <strong>{props.date.before}</strong>
+                        </div>
                     </div>
                 </div>
                 <div className="report_cart-pay">
