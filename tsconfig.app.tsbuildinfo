@@ -1,0 +1,1 @@
+{"root":["./src/App.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/AccountBlock.tsx","./src/components/Header.tsx","./src/components/Infornation.tsx","./src/components/Modal.tsx","./src/components/ReportCart.tsx","./src/components/Sidebar.tsx"],"errors":true,"version":"5.7.0-dev.20240916"}
